@@ -1,0 +1,9 @@
+@import "../../assets//styles/mixins.scss";
+
+.mainslider {
+   width: 65%;
+
+   @include lg {
+      width: 100%;
+   }
+}

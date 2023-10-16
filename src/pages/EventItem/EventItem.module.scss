@@ -1,0 +1,38 @@
+.eventitem {
+    display: flex;
+    gap: 1rem;
+
+    &__inner {
+        width: 65%;
+    }
+
+    &__image {
+        margin-block-end: 1rem;
+    }
+    
+    &__date {
+        display: block;
+        margin-block-end: 1.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--text-opacity-active);
+    }
+
+    &__title {
+        margin-block-end: 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    &__desc {
+        font-size: 1rem;
+        line-height: 1.2;
+        font-weight: 500;
+        color: var(--text-opacity-inactive1);
+
+        & + & {
+            margin-block-start: 1rem;
+        }
+    }
+}
+

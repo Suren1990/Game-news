@@ -1,0 +1,21 @@
+.footer {
+    margin-block-start: auto;
+    padding-block: 1.75rem;
+    background-color: var(--black);
+
+    &__social {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__social_item {
+        width: 32px;
+        height: 32px;
+        opacity: 0.75;
+        transition: opacity 180ms;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

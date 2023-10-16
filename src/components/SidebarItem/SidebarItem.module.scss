@@ -1,0 +1,49 @@
+.sidebaritem {
+    display: flex;
+    background-color: var(--bg-opacity);
+    border-radius: 3px;
+    opacity: 0.75;
+    transition: transform 360ms ease, background-color 360ms, opacity 360ms;
+    cursor: pointer;
+
+    & + & {
+        margin-block-start: 1rem;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        margin-block: auto;
+        padding: 0.5rem;
+    }
+
+    &__image {
+        flex: 0 0 5rem;
+        min-height: 5rem;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        margin-block-end: 0.5rem;
+        font-family: 'Rajdhani',sans-serif;
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--text-opacity-inactive1);
+    }
+
+    &__date {
+        display: block;
+        margin-block-end: 0.2rem;
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: var(--text-opacity-active);
+    }
+
+    &:hover {
+        opacity: 1;
+        transform: translate(-0.25rem, -0.25rem);
+    }
+}

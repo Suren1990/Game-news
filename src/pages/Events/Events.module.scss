@@ -1,0 +1,40 @@
+.events {
+
+    &__title {
+        margin-block-end: 1rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--text-active);
+        text-transform: uppercase;
+    }
+
+    &__content_inner {
+        display: flex;
+    }
+
+    &__posts {
+        width: 65%;
+    }
+
+    &__pages {
+        display: flex;
+        column-gap: 0.25rem;
+        margin-block-start: 1rem;
+
+        > a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1.75rem;
+            height: 1.75rem;
+            background-color: var(--active-color-opacity);
+            border-radius: 2px;
+            transition: background-color 240ms;
+
+            &.active,
+            &:hover {
+                background-color: var(--main-active-color);
+            }
+        }
+    }
+}
